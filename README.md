@@ -56,17 +56,7 @@ Leakage-safe rule: labels use **future window**, features use **early window** o
 
 ---
 
-## 6) Explainability (XAI)
-Goal: produce explanations a PM / analyst can trust.
-- Global explanations: SHAP summary plots, feature importance, permutation importance
-- Local explanations: SHAP per-product breakdown, LIME examples for individual predictions
-- Business-friendly outputs:
-  - "Top drivers of success for this product"
-  - "Which signals raised/lowered the prediction"
-
----
-
-## 7) Evaluation
+## 6) Evaluation
 Primary metrics depend on label type:
 - Classification: Macro F1, Precision/Recall, PR-AUC (focus on rare winners if imbalanced)
 - Regression: MAE/RMSE, rank correlation (if used for prioritization)
@@ -77,7 +67,7 @@ Validation strategy:
 
 ---
 
-## 8) Deliverables
+## 7) Deliverables
 - Trained multi-modal model with reproducible pipeline
 - Explainability report (global + per-example)
 - Stakeholder-facing summary (what signals matter and why)
@@ -85,28 +75,3 @@ Validation strategy:
 
 ---
 
-## 9) Roadmap
-[ ] Data ingestion + cleaning  
-[ ] Define success label + leakage-safe split  
-[ ] Build uni-modal baselines  
-[ ] Build multi-modal feature store (early-window)  
-[ ] Train + tune model  
-[ ] Add explainability (SHAP/LIME)  
-[ ] Write insights + dashboard  
-
----
-
-## 10) Repo Structure (Planned)
-- data/ (raw + processed, ignored in git if large)
-- notebooks/ (EDA + experiments)
-- src/
-  - features/ (multi-modal feature builders)
-  - models/ (training + inference)
-  - explain/ (SHAP/LIME)
-- app/ (optional Streamlit)
-- reports/ (figures + writeups)
-
----
-
-## 11) Team
-- Sharan Giri
