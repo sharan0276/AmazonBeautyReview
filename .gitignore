@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.parquet
+.DS_Store
+*.crc
+*.jsonl
+*.jsonl.gz

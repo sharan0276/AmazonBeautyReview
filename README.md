@@ -12,6 +12,8 @@ E-commerce teams need to spot **future winners early** for inventory planning, p
 - helpfulness / engagement signals
 - temporal dynamics (review velocity, trend shifts)
 
+Data source : https://amazon-reviews-2023.github.io
+
 Goal: **higher accuracy + clear explanations** for business stakeholders.
 
 ---
