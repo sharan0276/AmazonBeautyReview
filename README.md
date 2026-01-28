@@ -5,6 +5,7 @@ Project: **Transparent Multi-Modal Product Success Prediction: An Explainable AI
 This project predicts early product success on Amazon using review data. Retail teams care about this because early signals help with inventory planning, ranking, and knowing which new products will gain traction. The goal is to build a simple, transparent model using three short-term signals: ratings, sentiment, and review velocity.
 
 The project compares rating-only, text-only, time-only, and multimodal models. A/B-style ablation tests are used to see how much signal each modality and feature group contributes. Logistic Regression, XGBoost, and Histogram Gradient Boosting are evaluated using PR-AUC, Precision@K, Recall@K, and Lift@K. SHAP is used to explain feature impact and highlight which early signals matter most.
+
 ---
 ## Key Results
 
@@ -16,7 +17,9 @@ A/B testing confirms the strongest signals come from:
 - sentiment tone  
 
 Helpfulness features were tested and removed because they added noise.
+
 ---
+
 ## Retail Impact
 
 This system helps retail teams:
@@ -49,7 +52,9 @@ The modules executed above (`src`) implement the data preparation logic from **N
 For the remainder of the project, please proceed with **Notebook 2 (EDA & Feature Analysis)** and **Notebook 3 (Model Training)**.
 
 It is recommended to upload the processed data files (from `data/processed/stage1_output`) to Google Colab and run these notebooks.
+
 ---
+
 ## Future Work
 
 Next steps to expand the project:  
